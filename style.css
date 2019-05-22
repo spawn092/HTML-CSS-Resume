@@ -213,3 +213,35 @@ body
     width: 80px;
     transition: 1s;
 }
+
+@media only screen and (min-width: 769px) and (max-width: 1281px) { 
+    /* for 10 inches tablet screens */
+    .body {
+      content: "tablet to some desktop media query (769 > 1281) fired";
+      font-weight: bold;
+      display: block;
+      text-align: center;
+      background: rgba(255, 255, 0, 0.9); /* Semi-transparent yellow */
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 99;
+    }
+  } 
+  /* Medium Devices, Desktops */
+  @media only screen and (min-width : 992px) {
+      .body{
+        content: "tablet to some desktop media query (769 > 1281) fired";
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        background: rgba(0, 255, 21, 0.993); /* green */
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 99;
+      }
+
+}
